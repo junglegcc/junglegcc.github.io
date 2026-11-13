@@ -34,3 +34,15 @@ h2 { font-size: 19px; font-weight: 800; margin: 30px 0 12px; }
 .prompt button.ok { background: #2f9e44; }
 .tip { border-left: 4px solid var(--yel); padding: 4px 0 4px 12px; color: #4a443e; font-size: 15px; margin: 8px 0; }
 .foot { margin-top: 36px; font-size: 12.5px; color: var(--sub); text-align: center; }
+/* follow check gate (assets/gate.js) */
+html.fg-on, html.fg-on body { overflow: hidden; }
+html.fg-on .wrap { filter: blur(6px); pointer-events: none; user-select: none; }
+#fgate { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 16px; background: rgba(30, 24, 18, .55); }
+#fgate .fg-card { width: 100%; max-width: 380px; background: #fff; border-radius: 22px; padding: 26px 22px 20px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+#fgate img { display: block; margin: 0 auto; width: 76px; height: 76px; border-radius: 50%; }
+#fgate .fg-k { display: inline-block; margin-top: 10px; padding: 4px 12px; border-radius: 99px; background: var(--yel); color: var(--ink); font-size: 13px; font-weight: 800; }
+#fgate h2 { margin: 12px 0 6px; font-size: 24px; line-height: 1.3; font-weight: 900; }
+#fgate .fg-s { color: var(--sub); font-size: 14.5px; margin-bottom: 16px; }
+#fgate .fg-go, #fgate .fg-ok { display: block; width: 100%; padding: 14px; border-radius: 14px; font: inherit; font-size: 16px; font-weight: 800; text-decoration: none; cursor: pointer; }
+#fgate .fg-go { background: var(--ink); color: #fff; margin-bottom: 8px; }
+#fgate .fg-ok { background: #fff; color: var(--ink); border: 2px solid var(--ink); }
